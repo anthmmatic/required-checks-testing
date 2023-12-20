@@ -1,0 +1,7 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  caller-prime:
+    name: Main
+    uses: ./.github/workflows/lvl2.yml
