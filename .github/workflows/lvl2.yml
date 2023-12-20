@@ -1,0 +1,16 @@
+on:
+  workflow_call:
+
+jobs:
+  call-one:
+    name: CallerOne
+    uses: ./.github/workflows/lvl3.yml
+
+  call-two:
+    name: Caller Two
+    uses: ./.github/workflows/lvl3.yml
+
+  call-skip:
+    name: Skipper
+    if: false
+    uses: ./.github/workflows/lvl3.yml
