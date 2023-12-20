@@ -12,5 +12,4 @@ jobs:
 
   call-skip:
     name: Skipper
-    if: false
     uses: ./.github/workflows/lvl3.yml
