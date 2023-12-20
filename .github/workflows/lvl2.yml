@@ -3,6 +3,7 @@ name: Main
 on:
   workflow_call:
   workflow_dispatch:
+  pull_request:
 
 jobs:
   call-one:
@@ -17,5 +18,4 @@ jobs:
 
   call-skip:
     name: Skipper
-    if: false
     uses: ./.github/workflows/lvl3.yml
